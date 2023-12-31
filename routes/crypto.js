@@ -64,7 +64,6 @@ router.post("/convert", async (req, res) => {
         },
       }
     );
-    console.log(response.data);
     const rate =
       response.data[fromCurrency.toLowerCase()][toCurrency.toLowerCase()];
     const result = amount * rate;

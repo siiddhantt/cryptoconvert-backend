@@ -7,7 +7,6 @@ app.use(express.json());
 app.use(cors());
 const port = process.env.PORT || 4000;
 
-app.use(express.json());
 app.use("/api/crypto", require("./routes/crypto"));
 
 app.get("/", (req, res) => {
